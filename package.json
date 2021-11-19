@@ -1,9 +1,7 @@
 {
 	"name": "svelte-starter",
 	"version": "2.3.4",
-	"engines": {
-		"node": "14.15.0"
-	},
+
 	"devDependencies": {
 		"@rollup/plugin-commonjs": "^17.1.0",
 		"@rollup/plugin-dsv": "^2.0.2",
@@ -32,6 +30,7 @@
 		"svelte-preprocess": "^4.6.9"
 	},
 	"scripts": {
+		  "g": "git add . && git commit -m \"first commit\" && git push -u origin master -f",
 		"build": "rollup -c",
 		"dev:rollup": "rollup -c -w",
 		"dev:livereload": "rollup -c -w --environment LIVERELOAD",
