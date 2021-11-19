@@ -1,11 +1,11 @@
-import { linear } from 'svelte/easing';
-import { interpolateTransformSvg } from "d3-interpolate";
+import { linear } from "svelte/easing";
+import { interpolateTransformSvg } from "d3";
 
 export default function transform(node, params) {
 	const a = node.getAttribute("transform");
 	const b = `${params.relative ? a : ""} ${params.target}`;
 	const interpolator = interpolateTransformSvg(a, b);
-	
+
 	return {
 		delay: params.delay || 0,
 		duration: params.duration || 250,

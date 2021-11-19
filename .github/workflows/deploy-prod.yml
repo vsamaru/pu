@@ -18,6 +18,6 @@ jobs:
         uses: dswistowski/surge-sh-action@v1
         with:
           domain: '66o.surge.sh'
-          project: './public'
+          project: './static'
           login: vsamaru@gmail.com
           token: 89b7747249620a5492699aa660ae0f8e
