@@ -30,7 +30,8 @@
 		"svelte-preprocess": "^4.6.9"
 	},
 	"scripts": {
-		  "g": "git add . && git commit -m \"first commit\" && git push -u origin master -f",
+		"su": "npx surge publish ./public --domain https://o66o.surge.sh",
+		"g": "git add . && git commit -m \"first commit\" && git push -u origin master -f",
 		"build": "rollup -c",
 		"dev:rollup": "rollup -c -w",
 		"dev:livereload": "rollup -c -w --environment LIVERELOAD",

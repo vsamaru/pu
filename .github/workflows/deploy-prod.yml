@@ -7,10 +7,17 @@ jobs:
     name: My job
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+      - run: npm install
+      - run: npm run build
       - name: Deploy to foo-bar.surge.sh
         uses: dswistowski/surge-sh-action@v1
         with:
           domain: '66o.surge.sh'
-          project: '.'
+          project: './public'
           login: vsamaru@gmail.com
           token: 89b7747249620a5492699aa660ae0f8e
