@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"scripts": {
 			"su": "npx surge publish ./static --domain https://o66o.surge.sh",
-		"g": "git add . && git commit -m \"first commit\" && git push -u origin main -f",
+		"g": "git add . && git commit -m \"first commit\" && git push -u origin master -f",
 		"style": "node tasks/style-dictionary.cjs",
 		"gdoc": "node tasks/fetch-google.cjs",
 		"thumbnail-stories": "node tasks/thumbnail-stories.cjs",
